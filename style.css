@@ -1,6 +1,9 @@
+@import url("https://use.typekit.net/pak4vxw.css");
+
 body{
   background-color: #c10033;
-  margin: 35px;
+  margin: 30px;
+  padding: 30px;
 }
 
 .container{
@@ -9,64 +12,121 @@ body{
   align-items: center;
 }
 
+#phoneBox{
+  height: 663px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  /*background-color: white;*/
+}
+
 #phoneContents{
+  height: 663px;
+  width: 375px;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
+  /*overflow-y: hidden;
+  overflow-x: scroll;*/
+}
+
+.profile{
+  height: 663px;
+  /*display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;*/
 }
 
 #background{
-  height: 663px;
+  /*height: 663px;*/
   width: 375px;
-  background-color: white;
+  /*background-color: white;
   border-radius: 50px;
-  padding: 0px 50px 15px 30px;
+  padding: 0px 50px 15px 30px;*/
   box-sizing: border-box;
-  position: absolute;
-  /*left: 24.25em;
-  top: 1em;*/
+  /*position: absolute;*/
   z-index: -5;
 }
 
 #phone{
   height: 680px;
   position: absolute;
+  z-index: -3;
+}
+
+#backgroundSwatch{
+  height: 657px;
+  width: 394px;
+  background-color: white;
+  border-radius: 50px;
+  position: absolute;
+  z-index: -5;
+}
+
+#phoneDetail{
+  width: 191px;
+  position: absolute;
+  margin-top: -630px;
 }
 
 #spacer{
-  height: 363px;
+  height: 325px;
   width: 330;
 }
 
 .profileText{
-  height: 250px;
+  height: 220px;
   width: 330px;
   padding: 10px 15px 20px 15px;
   box-sizing: border-box;
   overflow-y: scroll;
   overflow-x: hidden;
   z-index: 5;
+  scrollbar-width: 10px;
+  scrollbar-color: #ff315d;
 }
 
-.profileHeader{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+.profileText::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.profileText::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+.profileText::-webkit-scrollbar-thumb {
+  background: #ff315d;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.profileText::-webkit-scrollbar-thumb:hover {
+  background: #c9234e;
 }
 
 .profileH1{
-  /*margin-top: 10px;*/
+  font-family: roc-grotesk-wide, sans-serif;
+  margin: 10px 0px 5px 0px;
 }
 
 .profileH2{
   font-size: 1em;
-  /*margin-top: 12px;*/
-  padding-left: 10px;
+  font-family: roc-grotesk-condensed, sans-serif;
+  font-weight: 300;
+  margin: 0px 0px 30px 0px;
 }
 
 .profileImg{
-  width: 375px;
+  width: 343px;
   border-radius: 50px;
-  margin: 0px 0px 0px -30px;
+  margin: 5px 0px 0px 11px;
+}
+
+.profileGraf{
+  font-family: Gopher, sans-serif;
 }
