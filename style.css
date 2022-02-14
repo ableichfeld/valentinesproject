@@ -71,9 +71,21 @@ body{
   margin-top: -630px;
 }
 
-#spacer{
-  height: 325px;
-  width: 330;
+#buttons{
+  position: absolute;
+  margin-top: -300px;
+}
+
+.button{
+  width: 65px;
+}
+
+#button1{
+  margin: 0px 190px 0px 0px; 
+}
+
+#button2{
+
 }
 
 .profileText{

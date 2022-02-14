@@ -15,7 +15,7 @@
           <img id="phoneDetail" src="photos/phone-detail.svg">
           <div class="profile" id="profile1">
             <div id="background">
-              <img class="profileImg" src="photos/li.jpg" alt="">
+              <img class="profileImg" id="profilePhoto" src="photos/li.jpg" alt="">
             </div>
             <div class="profileText">
               <div class="profileHeader">
@@ -57,8 +57,62 @@
                 <p class="profileGraf">“Don't settle for someone that's just OK,” Li said. “You should value yourself enough to know what you want and what you deserve.”</p>
               </div>
           </div>-->
+          <div id="buttons">
+            <img src="photos/button1.svg" class="button" onmouseover="activate1()" onmouseout="deactivate1()" id="button1" onmousedown="slideshiftBack()" alt="">
+            <img src="photos/button2.svg" class="button" onmouseover="activate2()" onmouseout="deactivate2()" id="button2" onmousedown="slideshiftForward()" alt="">
+          </div>
         </div>
       </div>
     </div>
+
+    <script>
+      var slidecount = 3;
+      var photo;
+
+      function activate1(){
+        document.getElementById('button1').src = 'photos/button1-active.svg';
+      }
+
+      function activate2(){
+        document.getElementById('button2').src = 'photos/button2-active.svg';
+      }
+
+      function deactivate1(){
+        document.getElementById('button1').src = 'photos/button1.svg';
+      }
+
+      function deactivate2(){
+        document.getElementById('button2').src = 'photos/button2.svg';
+      }
+
+      function slideshiftForward(){
+        slidecount = slidecount+1;
+        photo = document.getElementById('profilePhoto').src;
+        console.log(photo);
+        if (photo = "photos/wagner.jpg"){
+          document.getElementById('profilePhoto').src = "photos/iorizzo.jpg";
+        } else if (photo = "photos/iorizzo.jpg") {
+          document.getElementById('profilePhoto').src = "photos/li.jpg";
+        } else if (photo = "photos/li.jpg") {
+          document.getElementById('profilePhoto').src = "photos/steimel.jpg";
+        } else if (photo = "photos/steimel.jpg") {
+          document.getElementById('profilePhoto').src = "photos/kousik.jpg";
+        } else if (photo = "photos/kousik.jpg") {
+          document.getElementById('profilePhoto').src = "photos/miner.jpg";
+        } else if (photo = "photos/miner.jpg") {
+          document.getElementById('profilePhoto').src = "photos/imondi.jpg";
+        } else if (photo = "photos/imondi.jpg") {
+          document.getElementById('profilePhoto').src = "photos/khare.jpg";
+        } else if (photo = "photos/khare.jpg") {
+          document.getElementById('profilePhoto').src = "photos/rosemary.jpg";
+        };
+      }
+
+      function slideshiftBack(){
+        document.getElementById('profilePhoto').src = "photos/li.jpg";
+      }
+
+
+    </script>
   </body>
 </html>
