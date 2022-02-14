@@ -101,6 +101,13 @@ body{
   color: white;
 }
 
+#introDate{
+  font-family: roc-grotesk-wide, sans-serif;
+  font-weight: 500;
+  font-size: .5em;
+  color: white;
+}
+
 #intro2 p, #intro4 p{
   font-family: Gopher, sans-serif;
   margin: 8px 0px 8px 0px;
