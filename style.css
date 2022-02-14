@@ -274,3 +274,10 @@ body{
 .profileGraf{
   font-family: Gopher, sans-serif;
 }
+
+
+@media only screen and (max-width: 1145px){
+  *{
+    transform: scale(.95);
+  }
+}
