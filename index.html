@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css"/>
     <title>Northeastern students reflect on experiences, stigmas of dating apps - The Huntington News</title>
     <link rel="icon" href="photos/HN-logo.svg">
@@ -13,7 +14,48 @@
           <div id="backgroundSwatch"></div>
           <img id="phone" src="photos/phone-mockup.svg" alt="">
           <img id="phoneDetail" src="photos/phone-detail.svg">
-          <div class="profile" id="profile1">
+          <div class="intro" id="intro1">
+            <img src="photos/title.svg" id="title" alt="">
+            <img src="photos/arrow1.svg" id="arrow1" onmouseover="activate3()" onmouseout="deactivate3()" onmousedown="introshift1()" alt="">
+          </div>
+          <div class="intro" id="intro2">
+            <h1>Northeastern students reflect on experiences, stigmas of dating apps</h1>
+            <p class="introGraf">Dating apps are used by people of all backgrounds, but they’re commonly known to be a staple piece of the modern college culture.</p>
+            <p class="introGraf">As first-time and veteran dating app users are coming together in the immersive world of dating, The News spoke with nine students about their experiences and thoughts on what it means to meet romantic partners through a phone screen when the COVID-19 pandemic shut down all social scenes for almost three years.</p>
+            <img src="photos/arrow2.svg" id="arrow2" onmouseover="activate4()" onmouseout="deactivate4()" onmousedown="introshift2()"  alt="">
+          </div>
+          <div class="intro" id="intro3">
+            <h2>Select a profile</h2>
+            <div id="profileMenu">
+              <img src="photos/wagner.jpeg" class="menuPhoto" onclick="wagner()" alt="">
+              <img src="photos/iorizzo.jpg" class="menuPhoto" onclick="iorizzo()" alt="">
+              <img src="photos/li.jpg" class="menuPhoto" onclick="li()" alt="">
+              <img src="photos/steimel.jpg" class="menuPhoto" onclick="steimel()" alt="">
+              <img src="photos/kousik.jpeg" class="menuPhoto" onclick="kousik()" alt="">
+              <img src="photos/miner.jpg" class="menuPhoto" onclick="miner()" alt="">
+              <img src="photos/imondi.jpg" class="menuPhoto" onclick="imondi()" alt="">
+              <img src="photos/khare.jpg" class="menuPhoto" onclick="khare()" alt="">
+              <img src="photos/rosemary.jpg" class="menuPhoto" onclick="rosemary()" alt="">
+            </div>
+            <img src="photos/arrow3.svg" id="arrow3" onmouseover="activate5()" onmouseout="deactivate5()" onmousedown="introshift3()"  alt="">
+          </div>
+          <div class="intro" id="intro4">
+            <h1>Credits</h1>
+            <div class="introText">
+              <p class="introGraf">"Emily Wagner profile" by Cathy Ching, projects editor.<br><i>Photo courtesy Emily Wagner.</i></p>
+              <p class="introGraf">"Zoe Iorizzo profile" by Avery Bleichfeld, news staff.<br><i>Photo courtesy Zoe Iorizzo.</i></p>
+              <p class="introGraf">"Jovanne Li profile" by Cathy Ching, projects editor.<br><i>Photo courtesy Jovanne Li.</i></p>
+              <p class="introGraf">"Luke Steimel profile" by Haley Alphonse, news correspondent.<br><i>Photo by Haley Alphonse.</i></p>
+              <p class="introGraf">"Pragnya Kousik profile" by Cathy Ching, projects editor.<br><i>Photo courtesy Pragnya Kousik.</i></p>
+              <p class="introGraf">"Katherine Miner profile" by Avery Bleichfeld, news staff.<br><i>Photo courtesy Katherine Miner.</i></p>
+              <p class="introGraf">"Dominic Imondi profile" by Haley Alphonse, news correspondent.<br><i>Photo courtesy Dominic Imondi.</i></p>
+              <p class="introGraf">"Pankhuri Khare profile" by Cathy Ching, projects editor.<br><i>Photo courtesy Pankhuri Khare.</i></p>
+              <p class="introGraf">"Smita Rosemary profile" by Haley Alphonse, news correspondent.<br><i>Photo courtesy Smita Rosemary.</i></p>
+            </div>
+            <img src="photos/arrow4.svg" id="backButton2" onmouseover="activate7()" onmouseout="deactivate7()" onclick="conclBack()"alt="">
+          </div>
+          <div id="profile">
+            <img src="photos/backarrow.svg" id="backButton" onmouseover="activate6()" onmouseout="deactivate6()" onclick="introBack()"alt="">
             <div id="background">
               <img class="profileImg" id="profilePhoto" src="photos/li.jpg" alt="">
             </div>
@@ -38,8 +80,8 @@
               </div>
           </div>
           <div id="buttons">
-            <img src="photos/button1.svg" class="button" onmouseover="activate1()" onmouseout="deactivate1()" id="button1" onmousedown="slideshiftBack()" alt="">
-            <img src="photos/button2.svg" class="button" onmouseover="activate2()" onmouseout="deactivate2()" id="button2" onmousedown="slideshiftForward()" alt="">
+            <img src="photos/button1.svg" class="button" onmouseover="activate1()" onmouseout="deactivate1()" id="button1" onclick="slideshiftBack()" alt="">
+            <img src="photos/button2.svg" class="button" onmouseover="activate2()" onmouseout="deactivate2()" id="button2" onclick="slideshiftForward()" alt="">
           </div>
         </div>
       </div>
@@ -57,12 +99,304 @@
         document.getElementById('button2').src = 'photos/button2-active.svg';
       }
 
+      function activate3(){
+        document.getElementById('arrow1').src = 'photos/arrow1-active.svg';
+      }
+
+      function activate4(){
+        document.getElementById('arrow2').src = 'photos/arrow2-active.svg';
+      }
+
+      function activate5(){
+        document.getElementById('arrow3').src = 'photos/arrow3-active.svg';
+      }
+
+      function activate6(){
+        document.getElementById('backButton').src = 'photos/backarrow-active.svg';
+      }
+
+      function activate7(){
+        document.getElementById('backButton2').src = 'photos/arrow4-active.svg';
+      }
+
       function deactivate1(){
         document.getElementById('button1').src = 'photos/button1.svg';
       }
 
       function deactivate2(){
         document.getElementById('button2').src = 'photos/button2.svg';
+      }
+
+      function deactivate3(){
+        document.getElementById('arrow1').src = 'photos/arrow1.svg';
+      }
+
+      function deactivate4(){
+        document.getElementById('arrow2').src = 'photos/arrow2.svg';
+      }
+
+      function deactivate5(){
+        document.getElementById('arrow3').src = 'photos/arrow3.svg';
+      }
+
+      function deactivate6(){
+        document.getElementById('backButton').src = 'photos/backarrow.svg';
+      }
+
+      function deactivate7(){
+        document.getElementById('backButton2').src = 'photos/arrow4.svg';
+      }
+
+      function introshift1(){
+        document.getElementById('intro1').style.display = "none";
+        document.getElementById('intro2').style.display = "flex";
+      }
+
+      function introshift2(){
+        document.getElementById('intro2').style.display = "none";
+        document.getElementById('intro3').style.display = "flex";
+      }
+
+      function introshift3(){
+        document.getElementById('intro2').style.display = "flex";
+        document.getElementById('intro3').style.display = "none";
+      }
+
+      function introBack(){
+        document.getElementById('intro3').style.display = "flex";
+        document.getElementById('backgroundSwatch').style.backgroundColor = "#7C28CE";
+        document.getElementById('profile').style.display = "none";
+        document.getElementById('backButton').style.display = "none";
+        document.getElementById('buttons').style.display = "none";
+      }
+
+      function conclBack(){
+        document.getElementById('intro4').style.display = "none";
+        document.getElementById('backgroundSwatch').style.backgroundColor = "white";
+        document.getElementById('profile').style.display = "block";
+        document.getElementById('backButton').style.display = "block";
+        document.getElementById('buttons').style.display = "block";
+      }
+
+      function wagner(){
+        document.getElementById('intro3').style.display = "none";
+        document.getElementById('backgroundSwatch').style.backgroundColor = "white";
+        document.getElementById('profile').style.display = "block";
+        document.getElementById('backButton').style.display = "block";
+        document.getElementById('buttons').style.display = "block";
+        document.getElementById('profilePhoto').src = "photos/wagner.jpeg";
+        document.getElementById('profileH1').innerHTML = "Emily Wagner";
+        document.getElementById('profileH2').innerHTML = "Third-year, studio art";
+        document.getElementById('profileBody').innerHTML = `<p class="profileGraf">On April 7, 2021, third-year studio art major Emily Wagner looked around Golden Gate Park in San Francisco for someone with long, curly hair and an orange bike, hoping she would spot the blind date that her friend Karina set her up with. When they met up, they grabbed gyros and walked on the beach — Wagner decided to pursue this relationship. </p>
+        <p class="profileGraf">Three months later, they stopped seeing each other because Wagner’s long-term partner came home for the summer — she had been in an open relationship, which ended in November 2021.</p>
+        <p class="profileGraf">In the summer of 2021, Wagner re-downloaded dating apps on her phone after not using them for a while. She looked for flings and made sure to be upfront about her desires. To spark conversation, Wagner put on her Tinder profile: “I have seven vibrators and zero regrets.”</p>
+        <p class="profileGraf">As someone who is open about her sexuality, Wagner was disappointed that people in Boston were not. She found that her profile stirred up better conversation in San Francisco than in Boston and she had fewer Tinder matches in Boston.</p>
+        <p class="profileGraf">“I feel more accepted sexually in San Francisco,” Wagner said. “Here [in Boston] when I talk about [sex], people are a little off put.”</p>
+        <p class="profileGraf">In fact, when Wagner told a man she was casually seeing from Tinder that she was in an open relationship, he was not accepting of it. Wagner recalled him telling her that what she was doing was “dirty.”</p>
+        <p class="profileGraf">“I felt really ashamed and embarrassed,” Wagner said.</p>
+        <p class="profileGraf">Wagner has found dating to be difficult, especially on dating apps — not only because she is queer, but also because she is particular about the people she pursues. From her experiences on dating apps, Wagner learned to be forward about what she is looking for and what her boundaries are.</p>
+        <p class="profileGraf">“In queer relationships, I think communication of wants and desires is so important and that intimacy for me is built by being in person,” Wagner said.</p>
+        <p class="profileGraf">Even though Wagner believes that it’s easier to have genuine connections with people outside of dating apps, she does believe that dating apps are beneficial for those who do not go to parties often, like herself.</p>
+        <p class="profileGraf">“We as humans are just masters at creating tools to make our lives easier,” Wagner said. “[But] like most tools — it doesn’t work for everybody.”vAlthough Wagner likes dating apps less than she used to, she would defend those who use them any day. One of the biggest benefits of dating apps, she said, is the convenience of the large pool of candidates.</p>
+        <p class="profileGraf">“There’s [so many] fish in the sea,” Wagner said. “If you want [a] fish, are you going to get [it] individually or use a net?”</p>`;
+        profile = "wagner";
+      }
+
+      function iorizzo(){
+        document.getElementById('intro3').style.display = "none";
+        document.getElementById('backgroundSwatch').style.backgroundColor = "white";
+        document.getElementById('profile').style.display = "block";
+        document.getElementById('backButton').style.display = "block";
+        document.getElementById('buttons').style.display = "block";
+        document.getElementById('profilePhoto').src = "photos/iorizzo.jpg";
+        document.getElementById('profileH1').innerHTML = "Zoe Iorizzo";
+        document.getElementById('profileH2').innerHTML = "Second-year, business administration";
+        document.getElementById('profileBody').innerHTML = `<p class="profileGraf">When Zoe Iorizzo’s almost year-long relationship ended in September 2021, she — along with her roommates — turned to online dating. She is not, however, sold on the concept.</p>
+        <p class="profileGraf">“I just always compare [meeting people on dating apps] to when I started my previous relationships, because we met organically through a club or something through school …,” said Iorizzo, a second-year business administration major. “When you have just pictures of [someone] and maybe a short blurb about what they like, it’s very difficult to generate some kind of attraction.”</p>
+        <p class="profileGraf">For Iorizzo — who said she often will swipe on apps like Tinder and Bumble, but will rarely carry on a conversation for more than a day — many factors that play into deeper attraction happen in person, like the way someone holds themself or their level of confidence. She has struggled to find the equivalent online.</p>
+        <p class="profileGraf">“The sparks that are necessary for relationships don’t always show up,” Iorizzo said. “Even though we might have them when we come in person, that initial excitement just isn’t there, and it makes it very difficult to actually utilize [the apps].”</p>
+        <p class="profileGraf">Now, she approaches dating apps more as a game to pass time or play with friends. When she and her roommates are bored, they will sit on the couch and share the profiles of people they find attractive and celebrate or bemoan a match or a missed connection.</p>
+        <p class="profileGraf">“Sometimes we’ll match with the same guy, and we’ll kind of mess with them and send the same thing and see if they notice,” Iorizzo said. “It’s just to generate laughs.”</p>
+        <p class="profileGraf">While Iorizzo still holds out some spark of hope that she might make a meaningful connection on an app, she does not think it is likely.</p>
+        <p class="profileGraf">“It can be discouraging when you have a ton of matches and you’re not interested in any of them,” she said. “You have all these opportunities to start a connection with somebody, yet I just don’t want to because it’s just so hard to get to know somebody over a screen.”</p>
+        <p class="profileGraf">Iorizzo said she does not view dating apps as positive or negative. They can help some people make connections where they might not otherwise, she said, but she worries they may present some safety issues or lead to emotional distress as well.</p>
+        <p class="profileGraf">“From listening to other girls’ conversations, they will get upset when someone really attractive doesn’t match with them,” Iorizzo said. “When someone really attractive does match with them, they’ll be like, ‘Oh my gosh, this guy thinks I’m cute.’ They’ll get really excited over it. I think it is stemming from some kind of insecurities that people have. They end up going to dating apps to fill that hole of validation they might be missing from a partner or even friends.”</p>
+        <p class="profileGraf">Iorizzo said she will stick around on dating apps for some time as a way to fend off boredom, but doesn’t expect to stay on for too long.</p>
+        <p class="profileGraf">Generally, she thinks it is important for newcomers on dating apps to know what their motivation is.</p>
+        <p class="profileGraf">“I wouldn’t say, ‘Oh, you definitely should download them,’ or, ‘You definitely shouldn’t,’” Iorizzo said. “I’d say there’s no harm in giving it a try — just be aware of what you’re on there for.”</p>`;
+        profile = "iorizzo";
+      }
+
+      function li(){
+        document.getElementById('intro3').style.display = "none";
+        document.getElementById('backgroundSwatch').style.backgroundColor = "white";
+        document.getElementById('profile').style.display = "block";
+        document.getElementById('backButton').style.display = "block";
+        document.getElementById('buttons').style.display = "block";
+        document.getElementById('profilePhoto').src = "photos/li.jpg";
+        document.getElementById('profileH1').innerHTML = "Jovanne Li";
+        document.getElementById('profileH2').innerHTML = "Third-year, business administration and communication studies combined";
+        document.getElementById('profileBody').innerHTML = `<p class="profileGraf">As a romantic movie enthusiast, Jovanne Li, a third-year business administration and communication studies combined major, grew up wondering if she would be the main character of her own romantic movie. When Li entered the dating world in her first year of college, she quickly learned that it was not like the movies.</p>
+        <p class="profileGraf">Li downloaded Tinder in 2019 and set her expectations high. Ultimately, she fell for a man who did not reciprocate the same feelings. As difficult of a reality as this was for Li to face, many people go through the same in the dating world. She came out of the situation learning to better her communication skills and change her expectations.</p>
+        <p class="profileGraf">“Now, with the experiences that I’ve had, it’s made me understand better how to navigate the dating scene,” Li said. “It’s made me prioritize communication above anything else.”</p>
+        <p class="profileGraf">After her first setback, Li realized the importance of telling people exactly what she was looking for to avoid further instances of miscommunication with a partner. She makes sure to always “overshare.”</p>
+        <p class="profileGraf">“From now on, anytime I talk to someone, I’m always upfront about what they want and what I want,” Li said. “I make sure that we completely understand each other and what we’re getting into.”</p>
+        <p class="profileGraf">Li has been on Tinder for almost three years now. She learned that most people on the app are strictly looking for short flings and, as a previous victim of unfulfilled expectations, adapted to the mindset of her peers.</p>
+        <p class="profileGraf">“Now, with [Tinder], I’m going with the sense that it’s more of a ‘go with the flow’ situation,” Li said. “There’s never any pressure for it to turn into something long-lasting.”</p>
+        <p class="profileGraf">Although Li is a die-hard advocate for romantic movies, she does not believe in what a lot of movies preach: the “perfect person.”</p>
+        <p class="profileGraf">“Personally, I don’t believe in fate,” Li said. “I don’t believe that there’s only one right person for you. If we can have a lot of friends, then there’s no reason why there can’t be multiple people out there who are potentially good partners for you in a relationship.”</p>
+        <p class="profileGraf">Regardless of Li’s disbelief in fate, she does believe that everyone deserves to be treated like they are the main characters of romance movies — whether they expect it or not.</p>
+        <p class="profileGraf">“Don't settle for someone that's just OK,” Li said. “You should value yourself enough to know what you want and what you deserve.”</p>`;
+        profile = "li";
+      }
+
+      function steimel(){
+        document.getElementById('intro3').style.display = "none";
+        document.getElementById('backgroundSwatch').style.backgroundColor = "white";
+        document.getElementById('profile').style.display = "block";
+        document.getElementById('backButton').style.display = "block";
+        document.getElementById('buttons').style.display = "block";
+        document.getElementById('profilePhoto').src = "photos/steimel.jpg";
+        document.getElementById('profileH1').innerHTML = "Luke Steimel";
+        document.getElementById('profileH2').innerHTML = "First-year, computer science";
+        document.getElementById('profileBody').innerHTML = `<p class="profileGraf">Although dating apps are popular among Northeastern students, Luke Steimel, a first-year computer science major, believes that dating has become superficial over time. He attributes this to the culture of the “modern generation.”</p>
+        <p class="profileGraf">“Organic connections are a lot better,” Steimel said. </p>
+        <p class="profileGraf">Similarly, Steimel suggested that dating apps are almost artificial. There is a need for genuine connections that just cannot be provided through the internet, he said. </p>
+        <p class="profileGraf">When Steimel moved on campus in September 2021, he had his priorities set — neither dating nor social interactions fit his agenda. However, he managed to find friends quickly. Whether he studied with a group of classmates in the library or joined campus events, Steimel found it much easier to socialize in person. </p>
+        <p class="profileGraf">As a result, Steimel realized that being on campus and socializing face-to-face is more meaningful than meeting on Bumble or Tinder. </p>
+        <p class="profileGraf">“I think being on campus provides a huge advantage for dating and socializing in general,” Steimel said.</p>
+        <p class="profileGraf">Although he has only been in college for a semester, Steimel noticed that dating apps were not suitable for those who are looking to pursue long-lasting romantic relationships.</p>
+        <p class="profileGraf">“They’re effective for hookups. I don’t know about genuine connections though,” Steimel said. </p>
+        <p class="profileGraf">There are many success stories of people finding love on dating apps. Regardless, Steimel believes that dating apps are “shallow” and fail to present authentic connections.</p>
+        <p class="profileGraf">“The original design of Tinder was to be a college dating app, and I think it definitely serves this purpose. I don’t use them personally,” Steimel said. </p>
+        <p class="profileGraf">However, Steimel believes there is an upside. With COVID-19, students on campus have struggled with meeting new people and staying social — dating apps have helped with this issue. They’ve been effective with giving people another platform to interact and start conversations with new peers, Steimel said.</p>
+        <p class="profileGraf">After multiple years of remote work and interacting with people mainly behind a computer screen, dating apps have become a new “language” for Northeastern students, he said.</p>
+        <p class="profileGraf">But Steimel is not looking to be fluent in dating apps. Instead, he said he would rather stick to in-person socializing because he is not judged based on his appearance and a short self-introduction paragraph.</p>
+        <p class="profileGraf">“It’s difficult to imagine myself just scrolling through people and judging them through a screen based solely on an image,” Steimel said.</p>`;
+        profile = "steimel";
+      }
+
+      function kousik(){
+        document.getElementById('intro3').style.display = "none";
+        document.getElementById('backgroundSwatch').style.backgroundColor = "white";
+        document.getElementById('profile').style.display = "block";
+        document.getElementById('backButton').style.display = "block";
+        document.getElementById('buttons').style.display = "block";
+        document.getElementById('profilePhoto').src = "photos/kousik.jpeg";
+        document.getElementById('profileH1').innerHTML = "Pragnya Kousik";
+        document.getElementById('profileH2').innerHTML = "Third-year, business administration";
+        document.getElementById('profileBody').innerHTML = `<p class="profileGraf">When third-year business administration major Pragnya Kousik moved from Malvern, Pennsylvania, to Boston for college, she downloaded Tinder and Bumble to take advantage of the larger pool of candidates that was not present in her small, suburban hometown.</p>
+        <p class="profileGraf">As she swiped on college students in the Greater Boston area, Kousik noticed that it only took her a matter of seconds to decide whether she wanted to swipe left or right on each profile. Despite each profile having a short self-introduction about interests and hobbies, Kousik only paid attention to the first picture. </p>
+        <p class="profileGraf">“The nature of dating apps is judging a person mainly based on your physical attraction to them and then somewhat based on your attraction to their personality,” Kousik said. “It’s like a snap judgment. You see a person and if you don’t find them attractive at all, you’re immediately like ‘no.’”</p>
+        <p class="profileGraf">As someone who values personality over physical features in a partner, Kousik has recently deleted Tinder and Bumble because of its “toxic” culture — although she admits to having fallen into this mindset for a while as well.</p>
+        <p class="profileGraf">“When I was on dating apps, I was going off of my physical attraction to them,” Kousik said. “As I spent more time on dating apps, I realized that I should not just be looking at how attracted I am to the person. It’s also worth trying to learn about a person’s personality as well before completely saying ‘no’ or ‘yes’ to them.”</p>
+        <p class="profileGraf">Kousik sometimes found herself intrigued by the conversations she had with  people on dating apps, though not very often. And when she did decide to meet up with them in person, it usually did not work out. </p>
+        <p class="profileGraf">“In my experience, I tend to judge people pretty quickly,” she said. “There [have] been instances where I would go on a date and within a few minutes I would be like, ‘I don’t know if I would see them again.’ Regardless of how our conversation was going before we decided to meet up in person, it’s still like you’re meeting up with someone you don’t know anything about.”</p>
+        <p class="profileGraf">Aside from the superficial culture of dating apps, there is also the issue of the lack of authenticity in online conversations, Kousik said. Most of the people that matched with Kousik would generally start their conversations with a simple “hello.”</p>
+        <p class="profileGraf">“That’s giving me nothing,” she said. “I don’t really know where to go from [there].”</p>
+        <p class="profileGraf">Instead, it’s easier for Kousik to have genuine conversations with people she meets “organically.” As Kousik came to this realization, she reflected on the dates she went on in the past and why there was no chemistry derived from a relationship that she admits was first based on physical attraction.</p>
+        <p class="profileGraf">“I didn’t feel any spark or anything,” Kousik said. “I need that when I’m pursuing someone romantically.”</p>`;
+        profile = "kousik";
+      }
+
+      function miner(){
+        document.getElementById('intro3').style.display = "none";
+        document.getElementById('backgroundSwatch').style.backgroundColor = "white";
+        document.getElementById('profile').style.display = "block";
+        document.getElementById('backButton').style.display = "block";
+        document.getElementById('buttons').style.display = "block";
+        document.getElementById('profilePhoto').src = "photos/miner.jpg";
+        document.getElementById('profileH1').innerHTML = "Katherine Miner";
+        document.getElementById('profileH2').innerHTML = "Second-year, music";
+        document.getElementById('profileBody').innerHTML = `<p class="profileGraf">For Katherine Miner, a second-year music major, her approach to online dating in a COVID-19-focused world shifted when dating apps began to let users identify vaccination status.</p>
+        <p class="profileGraf">“If someone has information in their profile that says they're not vaccinated, I wouldn't even swipe because, A, I wouldn't really want to meet up with an unvaccinated person for safety reasons, and then B, I think it kind of shows you an interesting opinion into their politics and values and their opinion on the vaccine,” Miner said. “So, it's even more than just direct safety; it’s also like another level of getting to know someone's beliefs.”</p>
+        <p class="profileGraf">Even before people could let potential matches know if they had received a vaccine, dating apps were a useful tool for Miner, who began her time at Northeastern during the pandemic.</p>
+        <p class="profileGraf">“I think it just became a really normalized thing around my friends as a way to meet people, especially because, throughout my entire first year, you weren’t going to as many parties or big events where you didn’t necessarily know everyone already,” Miner said.</p>
+        <p class="profileGraf">As Miner began to experience her new college life, she did so with fewer in-person social events and classes. Even the classes that were in-person, with their masks and other protections, left her feeling removed from students and professors.</p>
+        <p class="profileGraf">“As someone who was really concerned about getting COVID, giving COVID to friends and family I think — as did everyone — it was very important for me to stay safe,” Miner said. “I had a few in-person classes last year, but they were not really normal because everyone was masked. It was kind of like you'd go, you'd get in, you'd learn and then you'd leave.”</p>
+        <p class="profileGraf">Through all the changes, Miner said she felt the cultural move to online dating made sense.</p>
+        <p class="profileGraf">“So much got shifted to an online format; I think it's only natural that dating did too,” she said. “You could still meet people and get to know people without risking your own health or the health of people you lived with, so it felt safer.”</p>
+        <p class="profileGraf">Miner, who prefers to use Bumble — which she feels has led to better connections — over Tinder and Hinge, said she spent most of her first year of college on dating apps, but largely did not meet up with her matches in-person.</p>
+        <p class="profileGraf">“I was like, ‘I want to prioritize seeing people in-person that are my friends and my family and not this random guy that I talked to that I had a few conversations with,’” Miner said.</p>
+        <p class="profileGraf">As the university begins to ease restrictions related to the pandemic, Miner said she has already noticed a change in how she uses dating apps, though she has not abandoned dating apps yet, even as more in-person events happen.</p>
+        <p class="profileGraf">“Now there’s in-person classes and in-person extracurriculars and in-person social events, going places with my friends … ,” Miner said. “That definitely impacts the time you even have to use those dating apps. It’s still there; it’s still fun to do and fun to play around with your friends and see what’s going on and meet people, but I do think it’s not like the only safe way to do that anymore.”</p>`;
+        profile = "miner";
+      }
+
+      function imondi(){
+        document.getElementById('intro3').style.display = "none";
+        document.getElementById('backgroundSwatch').style.backgroundColor = "white";
+        document.getElementById('profile').style.display = "block";
+        document.getElementById('backButton').style.display = "block";
+        document.getElementById('buttons').style.display = "block";
+        document.getElementById('profilePhoto').src = "photos/khare.jpg";
+        document.getElementById('profileH1').innerHTML = "Pankhuri Khare";
+        document.getElementById('profileH2').innerHTML = "Business analytics graduate student";
+        document.getElementById('profileBody').innerHTML = `<p class="profileGraf">After a month of late nights spent playing Uno with a stranger online, Pankhuri Khare finally decided it was time to exchange phone numbers and meet up with him. Today, Khare, a business analytics graduate student, finds herself in a committed seven-month relationship.</p>
+        <p class="profileGraf">When Khare downloaded Bumble, she did not expect to find love. She knew the dating scene in Delhi, India, was casual, so a relationship was the last thing she expected to get out of the dating app.</p>
+        <p class="profileGraf">“I used to be one of those nonbelievers,” Khare said.</p>
+        <p class="profileGraf">Before committing to her exclusive relationship, Khare was not tied down — this was the norm among her peers in Delhi. However, in the past, Khare noticed that many people were against dating apps, looking down upon casual and polyamorous relationships. But when people started staying indoors because of the pandemic, things changed.</p>
+        <p class="profileGraf">“I don’t think there’s any taboo associated with [casual dating] anymore,” Khare said. </p>
+        <p class="profileGraf">Like Khare, many of her peers in Delhi have started to view dating apps in a positive light. While many social scenes were shut down due to strict lockdown restrictions, people missed out on in-person interactions. To deal with this, many people turned to online dating. This was the case for Khare.</p>
+        <p class="profileGraf">“People were very anti-dating apps. They would say I want to meet somebody ‘organically,’” Khare said. “Your chance of meeting someone ‘naturally’ has reduced. [Through dating apps], you’re increasing your chances of meeting someone you’ll actually like.”</p>
+        <p class="profileGraf">When Khare downloaded Bumble, she started to understand the benefits that come with using dating apps. Swiping through tens of thousands of potential bachelors within a given region — especially in big cities like Boston — dating app users are increasing their pool of options. </p>
+        <p class="profileGraf">“It makes your intentions more clear,” Khare said. “You’re on the app for a reason. You’re not there just to make friends.”</p>
+        <p class="profileGraf">Aside from the increased number of candidates, Khare believes that another benefit of dating apps is the guarantee of safety. Unlike other social media platforms such as Instagram, strangers are able to communicate online without revealing personal information such as their last names and phone numbers. Many dating apps — like Tinder, Bumble and Hinge — also allow users to call each other through audio or video. </p>
+        <p class="profileGraf">Although the pandemic is not the only reason for skeptics changing their outlook on the once-taboo social media platforms, the increased popularity of dating apps that occurred during the pandemic certainly helped. </p>
+        <p class="profileGraf">“The catalyst was the pandemic,” Khare said.</p>`;
+        profile = "khare";
+      }
+
+      function khare(){
+        document.getElementById('intro3').style.display = "none";
+        document.getElementById('backgroundSwatch').style.backgroundColor = "white";
+        document.getElementById('profile').style.display = "block";
+        document.getElementById('backButton').style.display = "block";
+        document.getElementById('buttons').style.display = "block";
+        document.getElementById('profilePhoto').src = "photos/khare.jpg";
+        document.getElementById('profileH1').innerHTML = "Pankhuri Khare";
+        document.getElementById('profileH2').innerHTML = "Business analytics graduate student";
+        document.getElementById('profileBody').innerHTML = `<p class="profileGraf">After a month of late nights spent playing Uno with a stranger online, Pankhuri Khare finally decided it was time to exchange phone numbers and meet up with him. Today, Khare, a business analytics graduate student, finds herself in a committed seven-month relationship.</p>
+        <p class="profileGraf">When Khare downloaded Bumble, she did not expect to find love. She knew the dating scene in Delhi, India, was casual, so a relationship was the last thing she expected to get out of the dating app.</p>
+        <p class="profileGraf">“I used to be one of those nonbelievers,” Khare said.</p>
+        <p class="profileGraf">Before committing to her exclusive relationship, Khare was not tied down — this was the norm among her peers in Delhi. However, in the past, Khare noticed that many people were against dating apps, looking down upon casual and polyamorous relationships. But when people started staying indoors because of the pandemic, things changed.</p>
+        <p class="profileGraf">“I don’t think there’s any taboo associated with [casual dating] anymore,” Khare said. </p>
+        <p class="profileGraf">Like Khare, many of her peers in Delhi have started to view dating apps in a positive light. While many social scenes were shut down due to strict lockdown restrictions, people missed out on in-person interactions. To deal with this, many people turned to online dating. This was the case for Khare.</p>
+        <p class="profileGraf">“People were very anti-dating apps. They would say I want to meet somebody ‘organically,’” Khare said. “Your chance of meeting someone ‘naturally’ has reduced. [Through dating apps], you’re increasing your chances of meeting someone you’ll actually like.”</p>
+        <p class="profileGraf">When Khare downloaded Bumble, she started to understand the benefits that come with using dating apps. Swiping through tens of thousands of potential bachelors within a given region — especially in big cities like Boston — dating app users are increasing their pool of options. </p>
+        <p class="profileGraf">“It makes your intentions more clear,” Khare said. “You’re on the app for a reason. You’re not there just to make friends.”</p>
+        <p class="profileGraf">Aside from the increased number of candidates, Khare believes that another benefit of dating apps is the guarantee of safety. Unlike other social media platforms such as Instagram, strangers are able to communicate online without revealing personal information such as their last names and phone numbers. Many dating apps — like Tinder, Bumble and Hinge — also allow users to call each other through audio or video. </p>
+        <p class="profileGraf">Although the pandemic is not the only reason for skeptics changing their outlook on the once-taboo social media platforms, the increased popularity of dating apps that occurred during the pandemic certainly helped. </p>
+        <p class="profileGraf">“The catalyst was the pandemic,” Khare said.</p>`;
+        profile = "khare";
+      }
+
+      function rosemary(){
+        document.getElementById('intro3').style.display = "none";
+        document.getElementById('backgroundSwatch').style.backgroundColor = "white";
+        document.getElementById('profile').style.display = "block";
+        document.getElementById('backButton').style.display = "block";
+        document.getElementById('buttons').style.display = "block";
+        document.getElementById('profilePhoto').src = "photos/rosemary.jpg";
+        document.getElementById('profileH1').innerHTML = "Smita Rosemary";
+        document.getElementById('profileH2').innerHTML = "First-year, computer science and behavioral neuroscience combined";
+        document.getElementById('profileBody').innerHTML = `<p class="profileGraf">For Smita Rosemary, a first-year computer science and behavioral neuroscience combined major, dating apps provide many falsities and artificial values.</p>
+        <p class="profileGraf">Since people are usually swiping through profiles rapidly, these dating apps advertise fast connections that are “not genuine or long-lasting,” Rosemary said. However, she still believes they provide people with easy access to casual intimacy.</p>
+        <p class="profileGraf">Similarly, she believes students often use dating apps for validation in their appearance or personality. </p>
+        <p class="profileGraf">“A lot of people go on dating apps to feel like other people accept them for who they are,” Rosemary said.</p>
+        <p class="profileGraf">Due to societal “norms” and peer pressure, many students participate in casual intimacy nowadays, Rosemary said.</p>
+        <p class="profileGraf">“A lot of students lead really busy lives and they don’t have the time to commit to relationships, so a lot of them just sort of end up [resorting to] hookup culture,” Rosemary said.</p>
+        <p class="profileGraf">Even though casual intimacy is the main objective of social interaction with dating apps, not everyone supports the idea of constant hookups. Rosemary said she believes genuine connections are more valuable, and she does not frequently use dating apps because of this.</p>
+        <p class="profileGraf">“Lots of people use them for hookups, so I don’t have much hope for it,” Rosemary said. </p>
+        <p class="profileGraf">Likewise, Rosemary’s friends also have not had luck with finding matches that want anything more than a fling. These connections — both Rosemary’s and her friends’ —  have never progressed into a relationship. </p>
+        <p class="profileGraf">Although she does not use dating apps as much anymore, Rosemary has noticed that college students have used these apps more often since the pandemic began. </p>
+        <p class="profileGraf">Since most social gatherings have been put on hold for the last two years, people have become more accustomed to living their social lives online. In this case, the pandemic encourages the instant connections promised by dating apps, Rosemary said.</p>
+        <p class="profileGraf">Even so, Rosemary believes that residential students have a certain advantage when it comes to these connections since constantly working and interacting online is difficult. Whether students are looking for study spaces in between classes or eating in the dining halls, in-person social interaction is much more accessible, she said.</p>
+        <p class="profileGraf">“A lot of the people we meet end up being possible dating partners,” Rosemary said. </p>
+        <p class="profileGraf">With social interaction on campus being limited, residential students often turn towards these apps for romantic stability and don’t find it, Rosemary said.</p>
+        <p class="profileGraf">In her personal life, Rosemary said the pandemic has hindered her ability to make friends and build relationships with others. While being on campus, students are more reserved and tend to participate in less social interaction due to the easy accessibility dating apps and social media provides. </p>
+        <p class="profileGraf">“People just live their lives online now,” Rosemary said.</p>`;
+        profile = "rosemary";
       }
 
       function slideshiftForward(){
@@ -206,6 +540,12 @@
           <p class="profileGraf">In her personal life, Rosemary said the pandemic has hindered her ability to make friends and build relationships with others. While being on campus, students are more reserved and tend to participate in less social interaction due to the easy accessibility dating apps and social media provides. </p>
           <p class="profileGraf">“People just live their lives online now,” Rosemary said.</p>`;
           profile = "rosemary";
+        } else if (profile === "rosemary") {
+          document.getElementById('intro4').style.display = "flex";
+          document.getElementById('backgroundSwatch').style.backgroundColor = "#7C28CE";
+          document.getElementById('profile').style.display = "none";
+          document.getElementById('backButton').style.display = "none";
+          document.getElementById('buttons').style.display = "none";
         };
       }
 
