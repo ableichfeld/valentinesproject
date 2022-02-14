@@ -277,7 +277,7 @@ body{
 
 
 @media only screen and (max-width: 1145px){
-  *{
-    transform: scale(.95);
+  #phoneBox{
+    transform: scale(.85);
   }
 }

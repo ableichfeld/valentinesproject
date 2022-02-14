@@ -12,32 +12,32 @@
       <div id="phoneBox">
         <div id="phoneContents">
           <div id="backgroundSwatch"></div>
-          <img id="phone" src="photos/phone-mockup.svg" alt="">
+          <img id="phone" src="photos/phone-mockup.svg" alt="A vector graphic of a smartphone in pinks and purples.">
           <img id="phoneDetail" src="photos/phone-detail.svg">
           <div class="intro" id="intro1">
-            <img src="photos/title.svg" id="title" alt="">
-            <img src="photos/arrow1.svg" id="arrow1" onmouseover="activate3()" onmouseout="deactivate3()" onmousedown="introshift1()" alt="">
+            <img src="photos/title.svg" id="title" alt="Bold white letters read Pack Match, bookended by pink hearts.">
+            <img src="photos/arrow1.svg" id="arrow1" onmouseover="activate3()" onmouseout="deactivate3()" onmousedown="introshift1()" alt="A pink arrow pointing to the right with the word begin on it in white text.">
           </div>
           <div class="intro" id="intro2">
             <h1>Northeastern students reflect on experiences, stigmas of dating apps</h1>
             <p class="introGraf">Dating apps are used by people of all backgrounds, but they’re commonly known to be a staple piece of the modern college culture.</p>
             <p class="introGraf">As first-time and veteran dating app users are coming together in the immersive world of dating, The News spoke with nine students about their experiences and thoughts on what it means to meet romantic partners through a phone screen when the COVID-19 pandemic shut down all social scenes for almost three years.</p>
-            <img src="photos/arrow2.svg" id="arrow2" onmouseover="activate4()" onmouseout="deactivate4()" onmousedown="introshift2()"  alt="">
+            <img src="photos/arrow2.svg" id="arrow2" onmouseover="activate4()" onmouseout="deactivate4()" onmousedown="introshift2()"  alt="A pink arrow pointing to the right.">
           </div>
           <div class="intro" id="intro3">
             <h2>Select a profile</h2>
             <div id="profileMenu">
-              <img src="photos/wagner.jpeg" class="menuPhoto" onclick="wagner()" alt="">
-              <img src="photos/iorizzo.jpg" class="menuPhoto" onclick="iorizzo()" alt="">
-              <img src="photos/li.jpg" class="menuPhoto" onclick="li()" alt="">
-              <img src="photos/steimel.jpg" class="menuPhoto" onclick="steimel()" alt="">
-              <img src="photos/kousik.jpeg" class="menuPhoto" onclick="kousik()" alt="">
-              <img src="photos/miner.jpg" class="menuPhoto" onclick="miner()" alt="">
-              <img src="photos/imondi.jpg" class="menuPhoto" onclick="imondi()" alt="">
-              <img src="photos/khare.jpg" class="menuPhoto" onclick="khare()" alt="">
-              <img src="photos/rosemary.jpg" class="menuPhoto" onclick="rosemary()" alt="">
+              <img src="photos/wagner.jpeg" class="menuPhoto" onclick="wagner()" alt="A young woman with a mullet smiles.">
+              <img src="photos/iorizzo.jpg" class="menuPhoto" onclick="iorizzo()" alt="A young woman with long hair holding a canvas tote bag looks up to the left of the photo.">
+              <img src="photos/li.jpg" class="menuPhoto" onclick="li()" alt="A young Asian woman smiles at the camera in front of a truck with a celebrity painted on it.">
+              <img src="photos/steimel.jpg" class="menuPhoto" onclick="steimel()" alt="A young man with long hair smiles at the camera.">
+              <img src="photos/kousik.jpeg" class="menuPhoto" onclick="kousik()" alt="A young woman smiles at the camera in front of a tree.">
+              <img src="photos/miner.jpg" class="menuPhoto" onclick="miner()" alt="A young woman sits in an arm chair at a cafe, smiling at the camera.">
+              <img src="photos/imondi.jpg" class="menuPhoto" onclick="imondi()" alt="A young man with short hair smiles at the camera in front of a Christmas tree.">
+              <img src="photos/khare.jpg" class="menuPhoto" onclick="khare()" alt="A young woman in a restaurant smiles up at the camera.">
+              <img src="photos/rosemary.jpg" class="menuPhoto" onclick="rosemary()" alt="A young woman smiles at the camera.">
             </div>
-            <img src="photos/arrow3.svg" id="arrow3" onmouseover="activate5()" onmouseout="deactivate5()" onmousedown="introshift3()"  alt="">
+            <img src="photos/arrow3.svg" id="arrow3" onmouseover="activate5()" onmouseout="deactivate5()" onmousedown="introshift3()"  alt="A pink arrow points left.">
           </div>
           <div class="intro" id="intro4">
             <h1>Credits</h1>
@@ -52,12 +52,12 @@
               <p class="introGraf">"Pankhuri Khare profile" by Cathy Ching, projects editor.<br><i>Photo courtesy Pankhuri Khare.</i></p>
               <p class="introGraf">"Smita Rosemary profile" by Haley Alphonse, news correspondent.<br><i>Photo courtesy Smita Rosemary.</i></p>
             </div>
-            <img src="photos/arrow4.svg" id="backButton2" onmouseover="activate7()" onmouseout="deactivate7()" onclick="conclBack()"alt="">
+            <img src="photos/arrow4.svg" id="backButton2" onmouseover="activate7()" onmouseout="deactivate7()" onclick="conclBack()"alt="A pink arrow points left.">
           </div>
           <div id="profile">
-            <img src="photos/backarrow.svg" id="backButton" onmouseover="activate6()" onmouseout="deactivate6()" onclick="introBack()"alt="">
+            <img src="photos/backarrow.svg" id="backButton" onmouseover="activate6()" onmouseout="deactivate6()" onclick="introBack()"alt="An pink arrow sweeps to the right before turning back on itself to point left.">
             <div id="background">
-              <img class="profileImg" id="profilePhoto" src="photos/li.jpg" alt="">
+              <img class="profileImg" id="profilePhoto" src="photos/li.jpg" alt="A young Asian woman smiles at the camera in front of a truck with a celebrity painted on it.">
             </div>
             <div class="profileText">
               <div class="profileHeader">
@@ -185,6 +185,7 @@
         document.getElementById('backButton').style.display = "block";
         document.getElementById('buttons').style.display = "block";
         document.getElementById('profilePhoto').src = "photos/wagner.jpeg";
+        document.getElementById('profilePhoto').alt = "A young woman with a mullet smiles.";
         document.getElementById('profileH1').innerHTML = "Emily Wagner";
         document.getElementById('profileH2').innerHTML = "Third-year, studio art";
         document.getElementById('profileBody').innerHTML = `<p class="profileGraf">On April 7, 2021, third-year studio art major Emily Wagner looked around Golden Gate Park in San Francisco for someone with long, curly hair and an orange bike, hoping she would spot the blind date that her friend Karina set her up with. When they met up, they grabbed gyros and walked on the beach — Wagner decided to pursue this relationship. </p>
@@ -209,6 +210,7 @@
         document.getElementById('backButton').style.display = "block";
         document.getElementById('buttons').style.display = "block";
         document.getElementById('profilePhoto').src = "photos/iorizzo.jpg";
+        document.getElementById('profilePhoto').alt = "A young woman with long hair holding a canvas tote bag looks up to the left of the photo.";
         document.getElementById('profileH1').innerHTML = "Zoe Iorizzo";
         document.getElementById('profileH2').innerHTML = "Second-year, business administration";
         document.getElementById('profileBody').innerHTML = `<p class="profileGraf">When Zoe Iorizzo’s almost year-long relationship ended in September 2021, she — along with her roommates — turned to online dating. She is not, however, sold on the concept.</p>
@@ -234,6 +236,7 @@
         document.getElementById('backButton').style.display = "block";
         document.getElementById('buttons').style.display = "block";
         document.getElementById('profilePhoto').src = "photos/li.jpg";
+        document.getElementById('profilePhoto').alt = "A young Asian woman smiles at the camera in front of a truck with a celebrity painted on it.";
         document.getElementById('profileH1').innerHTML = "Jovanne Li";
         document.getElementById('profileH2').innerHTML = "Third-year, business administration and communication studies combined";
         document.getElementById('profileBody').innerHTML = `<p class="profileGraf">As a romantic movie enthusiast, Jovanne Li, a third-year business administration and communication studies combined major, grew up wondering if she would be the main character of her own romantic movie. When Li entered the dating world in her first year of college, she quickly learned that it was not like the movies.</p>
@@ -257,6 +260,7 @@
         document.getElementById('backButton').style.display = "block";
         document.getElementById('buttons').style.display = "block";
         document.getElementById('profilePhoto').src = "photos/steimel.jpg";
+        document.getElementById('profilePhoto').alt = "A young man with long hair smiles at the camera.";
         document.getElementById('profileH1').innerHTML = "Luke Steimel";
         document.getElementById('profileH2').innerHTML = "First-year, computer science";
         document.getElementById('profileBody').innerHTML = `<p class="profileGraf">Although dating apps are popular among Northeastern students, Luke Steimel, a first-year computer science major, believes that dating has become superficial over time. He attributes this to the culture of the “modern generation.”</p>
@@ -283,6 +287,7 @@
         document.getElementById('backButton').style.display = "block";
         document.getElementById('buttons').style.display = "block";
         document.getElementById('profilePhoto').src = "photos/kousik.jpeg";
+        document.getElementById('profilePhoto').alt = "A young woman smiles at the camera in front of a tree.";
         document.getElementById('profileH1').innerHTML = "Pragnya Kousik";
         document.getElementById('profileH2').innerHTML = "Third-year, business administration";
         document.getElementById('profileBody').innerHTML = `<p class="profileGraf">When third-year business administration major Pragnya Kousik moved from Malvern, Pennsylvania, to Boston for college, she downloaded Tinder and Bumble to take advantage of the larger pool of candidates that was not present in her small, suburban hometown.</p>
@@ -306,6 +311,7 @@
         document.getElementById('backButton').style.display = "block";
         document.getElementById('buttons').style.display = "block";
         document.getElementById('profilePhoto').src = "photos/miner.jpg";
+        document.getElementById('profilePhoto').alt = "A young woman sits in an arm chair at a cafe, smiling at the camera.";
         document.getElementById('profileH1').innerHTML = "Katherine Miner";
         document.getElementById('profileH2').innerHTML = "Second-year, music";
         document.getElementById('profileBody').innerHTML = `<p class="profileGraf">For Katherine Miner, a second-year music major, her approach to online dating in a COVID-19-focused world shifted when dating apps began to let users identify vaccination status.</p>
@@ -329,22 +335,22 @@
         document.getElementById('profile').style.display = "block";
         document.getElementById('backButton').style.display = "block";
         document.getElementById('buttons').style.display = "block";
-        document.getElementById('profilePhoto').src = "photos/khare.jpg";
-        document.getElementById('profileH1').innerHTML = "Pankhuri Khare";
-        document.getElementById('profileH2').innerHTML = "Business analytics graduate student";
-        document.getElementById('profileBody').innerHTML = `<p class="profileGraf">After a month of late nights spent playing Uno with a stranger online, Pankhuri Khare finally decided it was time to exchange phone numbers and meet up with him. Today, Khare, a business analytics graduate student, finds herself in a committed seven-month relationship.</p>
-        <p class="profileGraf">When Khare downloaded Bumble, she did not expect to find love. She knew the dating scene in Delhi, India, was casual, so a relationship was the last thing she expected to get out of the dating app.</p>
-        <p class="profileGraf">“I used to be one of those nonbelievers,” Khare said.</p>
-        <p class="profileGraf">Before committing to her exclusive relationship, Khare was not tied down — this was the norm among her peers in Delhi. However, in the past, Khare noticed that many people were against dating apps, looking down upon casual and polyamorous relationships. But when people started staying indoors because of the pandemic, things changed.</p>
-        <p class="profileGraf">“I don’t think there’s any taboo associated with [casual dating] anymore,” Khare said. </p>
-        <p class="profileGraf">Like Khare, many of her peers in Delhi have started to view dating apps in a positive light. While many social scenes were shut down due to strict lockdown restrictions, people missed out on in-person interactions. To deal with this, many people turned to online dating. This was the case for Khare.</p>
-        <p class="profileGraf">“People were very anti-dating apps. They would say I want to meet somebody ‘organically,’” Khare said. “Your chance of meeting someone ‘naturally’ has reduced. [Through dating apps], you’re increasing your chances of meeting someone you’ll actually like.”</p>
-        <p class="profileGraf">When Khare downloaded Bumble, she started to understand the benefits that come with using dating apps. Swiping through tens of thousands of potential bachelors within a given region — especially in big cities like Boston — dating app users are increasing their pool of options. </p>
-        <p class="profileGraf">“It makes your intentions more clear,” Khare said. “You’re on the app for a reason. You’re not there just to make friends.”</p>
-        <p class="profileGraf">Aside from the increased number of candidates, Khare believes that another benefit of dating apps is the guarantee of safety. Unlike other social media platforms such as Instagram, strangers are able to communicate online without revealing personal information such as their last names and phone numbers. Many dating apps — like Tinder, Bumble and Hinge — also allow users to call each other through audio or video. </p>
-        <p class="profileGraf">Although the pandemic is not the only reason for skeptics changing their outlook on the once-taboo social media platforms, the increased popularity of dating apps that occurred during the pandemic certainly helped. </p>
-        <p class="profileGraf">“The catalyst was the pandemic,” Khare said.</p>`;
-        profile = "khare";
+        document.getElementById('profilePhoto').src = "photos/imondi.jpg";
+        document.getElementById('profilePhoto').alt = "A young man with short hair smiles at the camera in front of a Christmas tree.";
+        document.getElementById('profileH1').innerHTML = "Dominic Imondi";
+        document.getElementById('profileH2').innerHTML = "First-year, computer science and business administration combined";
+        document.getElementById('profileBody').innerHTML = `<p class="profileGraf">Dominic Imondi, a first-year computer science and business administration combined major, has yet to enter the dating scene in college. However, he is well-versed in the pros and cons of using dating apps, a tool for immediate communication that is popular among his peers.</p>
+        <p class="profileGraf">Although dating apps are mainly used for that very reason — dating — Imondi believes that they do not have to be used only for romantic intimacy. Instead, he believes people could use them for platonic purposes. This rapid-use technology is especially beneficial when first-year students, like Imondi, are still settling into campus life.</p>
+        <p class="profileGraf">“Dating apps are a great way to meet people and make friends,” Imondi said. </p>
+        <p class="profileGraf">In his opinion, modern technology like Tinder or Bumble provide many ways to get to know someone, so they are “not completely blind” in terms of making organic connections.</p>
+        <p class="profileGraf">“The prompts they provide give you a pretty good opportunity to give a synopsis of your personality, so it really does give you an opportunity to see what a person is like before you reach out to them,” Imondi said.</p>
+        <p class="profileGraf">Most dating apps require users to post pictures of themselves and answer questions about hobbies and interests. In real life, people need to spark up conversations before getting more insight into their potential partners. Overall, it is easier to make conversation and quick connections on dating apps rather than in person, Imondi said.</p>
+        <p class="profileGraf">During the pandemic, Imondi noticed that his peers started to use dating apps more. Since users are only communicating through the app, there is “less personal contact,” which is why people are more likely to download them, Imondi said. </p>
+        <p class="profileGraf">Relating to a longing for connections, Imondi suggests dating apps have recently attracted college students living off-campus. Since students living and studying remotely are more independent, they are more likely to use dating apps for social interaction, he said. </p>
+        <p class="profileGraf">According to Imondi, dating apps have efficient algorithms to provide consumers with people that “fit their preferences and constraints” to fill this demand. Essentially, dating apps have evolved over the years to support this “short attention span” the current generation has adapted, Imondi said.</p>
+        <p class="profileGraf">Imondi describes dating apps as “accessible” since they allow young people to become immersed in the dating scene without going through the prolonged, unbearable awkwardness that usually comes with getting to know others.</p>
+        <p class="profileGraf">“I think it’s a really cool thing that technology allows us to do,” Imondi said.</p>`;
+        profile = "imondi";
       }
 
       function khare(){
@@ -354,6 +360,7 @@
         document.getElementById('backButton').style.display = "block";
         document.getElementById('buttons').style.display = "block";
         document.getElementById('profilePhoto').src = "photos/khare.jpg";
+        document.getElementById('profilePhoto').alt = "A young woman in a restaurant smiles up at the camera.";
         document.getElementById('profileH1').innerHTML = "Pankhuri Khare";
         document.getElementById('profileH2').innerHTML = "Business analytics graduate student";
         document.getElementById('profileBody').innerHTML = `<p class="profileGraf">After a month of late nights spent playing Uno with a stranger online, Pankhuri Khare finally decided it was time to exchange phone numbers and meet up with him. Today, Khare, a business analytics graduate student, finds herself in a committed seven-month relationship.</p>
@@ -378,6 +385,7 @@
         document.getElementById('backButton').style.display = "block";
         document.getElementById('buttons').style.display = "block";
         document.getElementById('profilePhoto').src = "photos/rosemary.jpg";
+        document.getElementById('profilePhoto').alt = "A young woman smiles at the camera.";
         document.getElementById('profileH1').innerHTML = "Smita Rosemary";
         document.getElementById('profileH2').innerHTML = "First-year, computer science and behavioral neuroscience combined";
         document.getElementById('profileBody').innerHTML = `<p class="profileGraf">For Smita Rosemary, a first-year computer science and behavioral neuroscience combined major, dating apps provide many falsities and artificial values.</p>
@@ -402,6 +410,7 @@
       function slideshiftForward(){
         if (profile === "wagner"){
           document.getElementById('profilePhoto').src = "photos/iorizzo.jpg";
+          document.getElementById('profilePhoto').alt = "A young woman with long hair holding a canvas tote bag looks up to the left of the photo.";
           document.getElementById('profileH1').innerHTML = "Zoe Iorizzo";
           document.getElementById('profileH2').innerHTML = "Second-year, business administration";
           document.getElementById('profileBody').innerHTML = `<p class="profileGraf">When Zoe Iorizzo’s almost year-long relationship ended in September 2021, she — along with her roommates — turned to online dating. She is not, however, sold on the concept.</p>
@@ -420,6 +429,7 @@
           profile = "iorizzo";
         } else if (profile === "iorizzo") {
           document.getElementById('profilePhoto').src = "photos/li.jpg";
+          document.getElementById('profilePhoto').alt = "A young Asian woman smiles at the camera in front of a truck with a celebrity painted on it.";
           document.getElementById('profileH1').innerHTML = "Jovanne Li";
           document.getElementById('profileH2').innerHTML = "Third-year, business administration and communication studies combined";
           document.getElementById('profileBody').innerHTML = `<p class="profileGraf">As a romantic movie enthusiast, Jovanne Li, a third-year business administration and communication studies combined major, grew up wondering if she would be the main character of her own romantic movie. When Li entered the dating world in her first year of college, she quickly learned that it was not like the movies.</p>
@@ -436,6 +446,7 @@
           profile = "li";
         } else if (profile === "li") {
           document.getElementById('profilePhoto').src = "photos/steimel.jpg";
+          document.getElementById('profilePhoto').alt = "A young man with long hair smiles at the camera.";
           document.getElementById('profileH1').innerHTML = "Luke Steimel";
           document.getElementById('profileH2').innerHTML = "First-year, computer science";
           document.getElementById('profileBody').innerHTML = `<p class="profileGraf">Although dating apps are popular among Northeastern students, Luke Steimel, a first-year computer science major, believes that dating has become superficial over time. He attributes this to the culture of the “modern generation.”</p>
@@ -455,6 +466,7 @@
           profile = "steimel";
         } else if (profile === "steimel") {
           document.getElementById('profilePhoto').src = "photos/kousik.jpeg";
+          document.getElementById('profilePhoto').alt = "A young woman smiles at the camera in front of a tree.";
           document.getElementById('profileH1').innerHTML = "Pragnya Kousik";
           document.getElementById('profileH2').innerHTML = "Third-year, business administration";
           document.getElementById('profileBody').innerHTML = `<p class="profileGraf">When third-year business administration major Pragnya Kousik moved from Malvern, Pennsylvania, to Boston for college, she downloaded Tinder and Bumble to take advantage of the larger pool of candidates that was not present in her small, suburban hometown.</p>
@@ -471,6 +483,7 @@
           profile = "kousik";
         } else if (profile === "kousik") {
           document.getElementById('profilePhoto').src = "photos/miner.jpg";
+          document.getElementById('profilePhoto').alt = "A young woman sits in an arm chair at a cafe, smiling at the camera.";
           document.getElementById('profileH1').innerHTML = "Katherine Miner";
           document.getElementById('profileH2').innerHTML = "Second-year, music";
           document.getElementById('profileBody').innerHTML = `<p class="profileGraf">For Katherine Miner, a second-year music major, her approach to online dating in a COVID-19-focused world shifted when dating apps began to let users identify vaccination status.</p>
@@ -488,6 +501,7 @@
           profile = "miner";
         } else if (profile === "miner") {
           document.getElementById('profilePhoto').src = "photos/imondi.jpg";
+          document.getElementById('profilePhoto').alt = "A young man with short hair smiles at the camera in front of a Christmas tree.";
           document.getElementById('profileH1').innerHTML = "Dominic Imondi";
           document.getElementById('profileH2').innerHTML = "First-year, computer science and business administration combined";
           document.getElementById('profileBody').innerHTML = `<p class="profileGraf">Dominic Imondi, a first-year computer science and business administration combined major, has yet to enter the dating scene in college. However, he is well-versed in the pros and cons of using dating apps, a tool for immediate communication that is popular among his peers.</p>
@@ -504,6 +518,7 @@
           profile = "imondi";
         } else if (profile === "imondi") {
           document.getElementById('profilePhoto').src = "photos/khare.jpg";
+          document.getElementById('profilePhoto').alt = "A young woman in a restaurant smiles up at the camera.";
           document.getElementById('profileH1').innerHTML = "Pankhuri Khare";
           document.getElementById('profileH2').innerHTML = "Business analytics graduate student";
           document.getElementById('profileBody').innerHTML = `<p class="profileGraf">After a month of late nights spent playing Uno with a stranger online, Pankhuri Khare finally decided it was time to exchange phone numbers and meet up with him. Today, Khare, a business analytics graduate student, finds herself in a committed seven-month relationship.</p>
@@ -521,6 +536,7 @@
           profile = "khare";
         } else if (profile === "khare") {
           document.getElementById('profilePhoto').src = "photos/rosemary.jpg";
+          document.getElementById('profilePhoto').alt = "A young woman smiles at the camera.";
           document.getElementById('profileH1').innerHTML = "Smita Rosemary";
           document.getElementById('profileH2').innerHTML = "First-year, computer science and behavioral neuroscience combined";
           document.getElementById('profileBody').innerHTML = `<p class="profileGraf">For Smita Rosemary, a first-year computer science and behavioral neuroscience combined major, dating apps provide many falsities and artificial values.</p>
@@ -552,6 +568,7 @@
       function slideshiftBack(){
         if (profile === "rosemary"){
           document.getElementById('profilePhoto').src = "photos/khare.jpg";
+          document.getElementById('profilePhoto').alt = "A young woman in a restaurant smiles up at the camera.";
           document.getElementById('profileH1').innerHTML = "Pankhuri Khare";
           document.getElementById('profileH2').innerHTML = "Business analytics graduate student";
           document.getElementById('profileBody').innerHTML = `<p class="profileGraf">After a month of late nights spent playing Uno with a stranger online, Pankhuri Khare finally decided it was time to exchange phone numbers and meet up with him. Today, Khare, a business analytics graduate student, finds herself in a committed seven-month relationship.</p>
@@ -569,6 +586,7 @@
           profile = "khare";
         } else if (profile === "khare") {
           document.getElementById('profilePhoto').src = "photos/imondi.jpg";
+          document.getElementById('profilePhoto').alt = "A young man with short hair smiles at the camera in front of a Christmas tree.";
           document.getElementById('profileH1').innerHTML = "Dominic Imondi";
           document.getElementById('profileH2').innerHTML = "First-year, computer science and business administration combined";
           document.getElementById('profileBody').innerHTML = `<p class="profileGraf">Dominic Imondi, a first-year computer science and business administration combined major, has yet to enter the dating scene in college. However, he is well-versed in the pros and cons of using dating apps, a tool for immediate communication that is popular among his peers.</p>
@@ -585,6 +603,7 @@
           profile = "imondi";
         } else if (profile === "imondi") {
           document.getElementById('profilePhoto').src = "photos/miner.jpg";
+          document.getElementById('profilePhoto').alt = "A young woman sits in an arm chair at a cafe, smiling at the camera.";
           document.getElementById('profileH1').innerHTML = "Katherine Miner";
           document.getElementById('profileH2').innerHTML = "Second-year, music";
           document.getElementById('profileBody').innerHTML = `<p class="profileGraf">For Katherine Miner, a second-year music major, her approach to online dating in a COVID-19-focused world shifted when dating apps began to let users identify vaccination status.</p>
@@ -602,6 +621,7 @@
           profile = "miner";
         } else if (profile === "miner") {
           document.getElementById('profilePhoto').src = "photos/kousik.jpeg";
+          document.getElementById('profilePhoto').alt = "A young woman smiles at the camera in front of a tree.";
           document.getElementById('profileH1').innerHTML = "Pragnya Kousik";
           document.getElementById('profileH2').innerHTML = "Third-year, business administration";
           document.getElementById('profileBody').innerHTML = `<p class="profileGraf">When third-year business administration major Pragnya Kousik moved from Malvern, Pennsylvania, to Boston for college, she downloaded Tinder and Bumble to take advantage of the larger pool of candidates that was not present in her small, suburban hometown.</p>
@@ -618,6 +638,7 @@
           profile = "kousik";
         } else if (profile === "kousik") {
           document.getElementById('profilePhoto').src = "photos/steimel.jpg";
+          document.getElementById('profilePhoto').alt = "A young man with long hair smiles at the camera.";
           document.getElementById('profileH1').innerHTML = "Luke Steimel";
           document.getElementById('profileH2').innerHTML = "First-year, computer science";
           document.getElementById('profileBody').innerHTML = `<p class="profileGraf">Although dating apps are popular among Northeastern students, Luke Steimel, a first-year computer science major, believes that dating has become superficial over time. He attributes this to the culture of the “modern generation.”</p>
@@ -637,6 +658,7 @@
           profile = "steimel";
         } else if (profile === "steimel") {
           document.getElementById('profilePhoto').src = "photos/li.jpg";
+          document.getElementById('profilePhoto').alt = "A young Asian woman smiles at the camera in front of a truck with a celebrity painted on it.";
           document.getElementById('profileH1').innerHTML = "Jovanne Li";
           document.getElementById('profileH2').innerHTML = "Third-year, business administration and communication studies combined";
           document.getElementById('profileBody').innerHTML = `<p class="profileGraf">As a romantic movie enthusiast, Jovanne Li, a third-year business administration and communication studies combined major, grew up wondering if she would be the main character of her own romantic movie. When Li entered the dating world in her first year of college, she quickly learned that it was not like the movies.</p>
@@ -653,6 +675,7 @@
           profile = "li";
         } else if (profile === "li") {
           document.getElementById('profilePhoto').src = "photos/iorizzo.jpg";
+          document.getElementById('profilePhoto').alt = "A young woman with long hair holding a canvas tote bag looks up to the left of the photo.";
           document.getElementById('profileH1').innerHTML = "Zoe Iorizzo";
           document.getElementById('profileH2').innerHTML = "Second-year, business administration";
           document.getElementById('profileBody').innerHTML = `<p class="profileGraf">When Zoe Iorizzo’s almost year-long relationship ended in September 2021, she — along with her roommates — turned to online dating. She is not, however, sold on the concept.</p>
@@ -671,6 +694,7 @@
           profile = "iorizzo";
         } else if (profile === "iorizzo") {
           document.getElementById('profilePhoto').src = "photos/wagner.jpeg";
+          document.getElementById('profilePhoto').alt = "A young woman with a mullet smiles.";
           document.getElementById('profileH1').innerHTML = "Emily Wagner";
           document.getElementById('profileH2').innerHTML = "Third-year, studio art";
           document.getElementById('profileBody').innerHTML = `<p class="profileGraf">On April 7, 2021, third-year studio art major Emily Wagner looked around Golden Gate Park in San Francisco for someone with long, curly hair and an orange bike, hoping she would spot the blind date that her friend Karina set her up with. When they met up, they grabbed gyros and walked on the beach — Wagner decided to pursue this relationship. </p>
