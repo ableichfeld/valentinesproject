@@ -104,10 +104,10 @@ body{
 #intro2 p, #intro4 p{
   font-family: Gopher, sans-serif;
   margin: 8px 0px 8px 0px;
+  color: white;
 }
 
 #intro4 p{
-  color: white;
   margin-left: 15px;
   text-indent: -15px;
 }
