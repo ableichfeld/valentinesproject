@@ -125,6 +125,10 @@ body{
   color: white;
 }
 
+#designCredit{
+  padding-top: 15px;
+}
+
 #title{
   width: 325px;
 }
